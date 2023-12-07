@@ -1,25 +1,33 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import Button from './components/button'
+import Container from './components/container'
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+     <Container>
+      <Button>Primary</Button>
+      <Button variant={Button.VARIANTS.SECONDARY} >Secondary</Button>
+      <Button variant={Button.VARIANTS.DANGER} >Danger</Button>
+      <Button variant={Button.VARIANTS.SUCCESS} >Success</Button>
+      <Button variant={Button.VARIANTS.WARNING} >Warning</Button>
+      <Button variant={Button.VARIANTS.INFO} >Info</Button>
+      <Button variant={Button.VARIANTS.DARK} >Dark</Button>
+
+      <Button look={Button.LOOKS.OUTLINED}>Primary</Button>
+      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.SECONDARY} >Secondary</Button>
+      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.DANGER} >Danger</Button>
+      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.SUCCESS} >Success</Button>
+      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.WARNING} >Warning</Button>
+      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.INFO} >Info</Button>
+      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.DARK} >Dark</Button>
+
+      <Button size={Button.SIZES.LARGE} >Primary</Button>
+      <Button size={Button.SIZES.MEDIUM} >Primary</Button>
+      <Button size={Button.SIZES.SMALL} >Primary</Button>
+     
+      
+     </Container>
+  )
 }
 
-export default App;
+export default App
