@@ -6,7 +6,7 @@ const App = () => {
   return (
      <Container>
       <Button>Primary</Button>
-      <Button variant={Button.VARIANTS.SECONDARY} >Secondary</Button>
+      <Button disabled variant={Button.VARIANTS.SECONDARY} >Secondary</Button>
       <Button variant={Button.VARIANTS.DANGER} >Danger</Button>
       <Button variant={Button.VARIANTS.SUCCESS} >Success</Button>
       <Button variant={Button.VARIANTS.WARNING} >Warning</Button>
@@ -19,7 +19,7 @@ const App = () => {
       <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.SUCCESS} >Success</Button>
       <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.WARNING} >Warning</Button>
       <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.INFO} >Info</Button>
-      <Button look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.DARK} >Dark</Button>
+      <Button disabled look={Button.LOOKS.OUTLINED} variant={Button.VARIANTS.DARK} >Dark</Button>
 
       <Button size={Button.SIZES.LARGE} >Primary</Button>
       <Button size={Button.SIZES.MEDIUM} >Primary</Button>
